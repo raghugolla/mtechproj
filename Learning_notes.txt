@@ -1,0 +1,114 @@
+Today Learning:
+
+1) How to resolve DoesNotExist: matching query does not exist.?
+   1) Check the db
+   2) user try and catch
+   
+   
+2) How to migrate.
+   1) Try to makemigration command
+   2) then migrate
+ 
+ 
+ 3) We have to create manytomant(M2M) after creation of the object only.(tracking timeslots)
+ 	by usng add() method we can add multiple items to M2M field.
+ 	
+4) isinstance method:
+How do I check if an object is an instance of a given class or of a subclass of it?
+Use the built-in function isinstance.
+
+if isinstance(obj, MyClass):
+     print "obj is my object"
+     
+5) sudo cp -r static/* /var/www/dev.shipler.in/static/
+	this command is for to copy static file 
+	
+6) how to revert the last commits
+$ git status
+$ git revert bfc0b4f
+$ git revert 63afe64
+$ git revert c73324c
+ 
+ 
+ 7) How create new branch in bitbucket from local:
+ 
+ For example you wnt create feature_branch from master branch.(Note you in master branch)
+ 
+ $ git branch feature_branch
+ $ git checkout feature_branch
+ $ git add .
+ $ git commit -m "I am creating new branch"
+ $ git checkout master
+ $ git merge feature_branch
+ $ git push origin feature_branch
+ 
+8) apache config file sudo vi /etc/apache2/sites-available/dev.shipler.in.conf
+
+9) Making virtual environment
+		$ mkvirtualenv drf
+		$ workon drf
+
+
+10) my branch is always ahead of the branch on bitbucket
+	To resolve
+git reset --hard pointer-id
+
+11) facebook debugger
+https://developers.facebook.com/tools/debug/og/object/
+
+12) Decorators:
+
+Decorator is a function which will take function as a parameter and returns the new function. 
+
+The advantage of decorators is we can aliter the function without explicitly metionied
+
+
+
+13) Gulp work:
+
+cd less_setup/
+npm install
+sudo apt-get install npm
+npm install
+gulp
+ls 
+node_modules/.bin/gulp 
+node_modules/.bin/gulp
+deactivate
+node_modules/.bin/gulp
+ls node_modules/
+ls node_modules/gulp
+ls node_modules/gulp/bin/
+ls node_modules/.bin/
+cat node_modules/.bin/gulp 
+node_modules/.bin/gulp
+ln -s /usr/bin/nodejs /usr/bin/node
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+node_modules/.bin/gulp
+
+
+14) To run local server in you mobile
+
+In command prompt: python manage.py runserver 0.0.0.0:8000
+In mobile : your computer address:8000 
+
+
+
+15 how to remove all the changes in the server?
+
+git checkout -- .
+
+
+we want remove only one file changes>
+
+git checkout -- shipler/urls.py
+
+
+
+
+16) Your remote branch is not visible?
+
+git branch -r
+check whether branch is exist or not
+if not 
+git fetch command
